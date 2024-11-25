@@ -7,9 +7,26 @@
                 <p>Price: <t t-esc="product.list_price"/> USD</p>
                 <p>Available Quantity: <t t-esc="product.qty_available"/></p>
                 
-                <!-- Product Image -->
+                <!-- Product Main Image -->
                 <div>
-                    <img t-att-src="'data:image/png;base64,' + product.image_1920.decode('utf-8')" alt="Product Image" class="img-fluid" style="max-width: 300px;"/>
+                    <img t-att-src="'data:image/png;base64,' + product.image_1920.decode('utf-8')" 
+                         alt="Product Image" 
+                         class="img-fluid" 
+                         style="max-width: 300px;"/>
+                </div>
+
+                <!-- Fiche Technique Image -->
+                <div>
+                    <h3>Fiche Technique Image</h3>
+                    <t t-if="product.fiche_technique_image">
+                        <img t-att-src="'data:image/png;base64,' + product.fiche_technique_image.decode('utf-8')" 
+                             alt="Fiche Technique Image" 
+                             class="img-fluid" 
+                             style="max-width: 300px;"/>
+                    </t>
+                    <t t-else="">
+                        <p>No Fiche Technique Image uploaded.</p>
+                    </t>
                 </div>
             </div>
         </t>
