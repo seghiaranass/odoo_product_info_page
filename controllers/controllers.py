@@ -9,6 +9,7 @@ class ProductInfoController(http.Controller):
         if not product.exists():
             return request.render('website.404')
         
-        return request.render('product_info_page.product_page_template', {
+
+        return request.render('odoo_product_info_page.product_page_template', {
             'product': product
         })

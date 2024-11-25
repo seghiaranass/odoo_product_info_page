@@ -1,9 +1,9 @@
 {
     'name': 'Product Info Page',
     'version': '16.0.1.0.0',
-    'depends': ['website', 'product'],
+    'depends': ['base','web', 'product'],
     'data': [
-        'views/templates.xml',
+        'views/product_page_template.xml',
     ],
     'installable': True,
     'application': True,
