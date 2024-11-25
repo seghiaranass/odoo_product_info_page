@@ -2,18 +2,18 @@
     <template id="product_page_template" name="Product Info Page">
         <t t-call="web.layout">
             <div class="container">
-                <h1><t t-esc="product.name"/></h1>
+                <!-- <h1><t t-esc="product.name"/></h1>
                 <p><t t-esc="product.description_sale"/></p>
                 <p>Price: <t t-esc="product.list_price"/> USD</p>
-                <p>Available Quantity: <t t-esc="product.qty_available"/></p>
+                <p>Available Quantity: <t t-esc="product.qty_available"/></p> -->
                 
                 <!-- Product Main Image -->
-                <div>
+                <!-- <div>
                     <img t-att-src="'data:image/png;base64,' + product.image_1920.decode('utf-8')" 
                          alt="Product Image" 
                          class="img-fluid" 
                          style="max-width: 300px;"/>
-                </div>
+                </div> -->
 
                 <!-- Fiche Technique Image -->
                 <div>
