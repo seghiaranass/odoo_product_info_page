@@ -9,7 +9,7 @@
                         <img t-att-src="'data:image/png;base64,' + product.fiche_technique_image.decode('utf-8')" 
                              alt="Fiche Technique Image" 
                              class="img-fluid" 
-                             style="max-width: 300px; display: block; margin: 0 auto;"/>
+                             style="display: block; margin: 0 auto;"/>
                     </t>
                     <t t-else="">
                         <p>No Fiche Technique Image uploaded.</p>
