@@ -1,0 +1,16 @@
+<odoo>
+    <record id="product_template_form_inherit_fiche_technique" model="ir.ui.view">
+        <field name="name">product.template.product.form.inherit.fiche.technique</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[last()]" position="after">
+                <page string="Fiche Technique Image">
+                    <group>
+                        <field name="fiche_technique_image" widget="image" class="oe_avatar" options="{'preview_image': 'fiche_technique_image'}"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -4,6 +4,7 @@
     'depends': ['base','web', 'product'],
     'data': [
         'views/product_page_template.xml',
+        'views/product_template_form_inherit.xml',
     ],
     'installable': True,
     'application': True,
