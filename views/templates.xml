@@ -1,0 +1,12 @@
+<odoo>
+    <template id="product_page_template" name="Product Info Page">
+        <t t-call="website.layout">
+            <div class="container">
+                <h1><t t-esc="product.name"/></h1>
+                <p><t t-esc="product.description_sale"/></p>
+                <p>Price: <t t-esc="product.list_price"/> USD</p>
+                <p>Available Quantity: <t t-esc="product.qty_available"/></p>
+            </div>
+        </t>
+    </template>
+</odoo>
